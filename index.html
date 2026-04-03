@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8 Razões que Fazem do Fasting Support o Suplemento Favorito de Quem Pratica Jejum Intermitente</title>
+  <style>
+    @font-face {
+      font-family: 'Halenoir';
+      src: url('brand_assets/Halenoir/Halenoir-Light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Halenoir';
+      src: url('brand_assets/Halenoir/Halenoir-Medium.otf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Halenoir';
+      src: url('brand_assets/Halenoir/Halenoir-Light.otf') format('opentype');
+      font-weight: 350;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'IBMPlexMono';
+      src: url('brand_assets/IBM Plex Mono/IBMPlexMono-Light.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'IBMPlexMono';
+      src: url('brand_assets/IBM Plex Mono/IBMPlexMono-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'IBMPlexMono';
+      src: url('brand_assets/IBM Plex Mono/IBMPlexMono-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    :root {
+      --accent: #3c4581;
+      --accent-hover: #2e3566;
+      --black: #000000;
+      --text: #111111;
+      --text-muted: #555555;
+      --text-light: #888888;
+      --border: #e0e0e0;
+      --bg: #ffffff;
+      --surface: #f5f5f3;
+      --white: #ffffff;
+      --star: #d4a017;
+      --oferta-btn: #1a4f1b;
+      --oferta-btn-hover: #154116;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; }
+
+    body {
+      font-family: 'Halenoir', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    img { display: block; width: 100%; max-width: 100%; }
+
+    /* ─── HEADER ─────────────────────────────────────────── */
+    .header {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 0 64px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex; align-items: center;
+    }
+    .logo img {
+      height: 20px;
+      width: auto;
+      object-fit: contain;
+    }
+    .btn-header {
+      font-family: 'IBMPlexMono', monospace;
+      font-size: 11px; font-weight: 400; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--white);
+      background: var(--accent);
+      border: none; border-radius: 100px; padding: 8px 18px;
+      text-decoration: none; cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .btn-header:hover { background: var(--accent-hover); }
+    .btn-header:active { transform: scale(0.98); }
+    .btn-header:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+    /* ─── HERO ───────────────────────────────────────────── */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: calc(100vh - 56px);
+      overflow: hidden;
+    }
+    .hero-left {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 56px 56px 56px 64px;
+      background: var(--bg);
+    }
+    .hero-rating {
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 24px;
+    }
+    .hero-stars { display: flex; gap: 3px; }
+    .hero-stars svg { width: 16px; height: 16px; fill: var(--star); }
+    .hero-rating-text {
+      font-family: 'IBMPlexMono', monospace;
+      font-size: 11px; font-weight: 400; color: var(--text-muted);
+      letter-spacing: 0.02em;
+    }
+    .hero-rating-text span { color: var(--black); font-weight: 400; }
+    .hero-title {
+      font-family: 'Halenoir', sans-serif;
+      font-size: clamp(30px, 3vw, 48px);
+      font-weight: 350;
+      letter-spacing: -0.03em;
+      color: var(--black);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .hero-body {
+      font-family: 'Halenoir', sans-serif;
+      font-size: 15px; line-height: 1.7; color: var(--text-muted);
+      font-weight: 300;
+      max-width: 420px; margin-bottom: 36px;
+    }
+    .btn-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent); color: var(--white);
+      font-family: 'IBMPlexMono', monospace;
+      font-size: 12px; font-weight: 400; letter-spacing: 0.06em;
+      text-transform: uppercase; text-decoration: none;
+      padding: 15px 36px; border-radius: 100px; border: none;
+      cursor: pointer; align-self: flex-start;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .btn-cta:hover { background: var(--accent-hover); }
+    .btn-cta:active { transform: scale(0.98); }
+    .btn-cta:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .hero-right {
+      position: relative; overflow: hidden;
+    }
+    .hero-right img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* ─── SMALL REVIEWS ROW ──────────────────────────────── */
+    .reviews-row {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      max-width: 960px; margin: 0 auto;
+      padding: 40px 24px;
+      gap: 20px;
+    }
+    .review-card-sm {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 22px;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .rc-stars { display: flex; gap: 3px; }
+    .rc-stars svg { width: 15px; height: 15px; fill: var(--star); }
+    .rc-title {
+      font-family: 'Halenoir', sans-serif;
+      font-size: 15px; font-weight: 500; color: var(--black);
+    }
+    .rc-body {
+      font-family: 'Halenoir', sans-serif;
+      font-size: 13px; line-height: 1.6; color: var(--text-muted); font-weight: 300;
+    }
+    .rc-div { border: none; border-top: 1px solid var(--border); margin: 2px 0; }
+    .rc-author {
+      font-family: 'IBMPlexMono', monospace;
+      font-size: 11px; font-weight: 400; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-light);
+    }
+
+    /* ─── FEATURE ROWS ───────────────────────────────────── */
+    .features { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+    .feature-row {
+      display: grid; grid-template-columns: 5fr 6fr;
+      gap: 64px; align-items: center;
+      padding: 56px 0;
+      border-top: 1px solid var(--border);
+    }
+    .feature-img {
+      border-radius: 6px; overflow: hidden;
+      aspect-ratio: 1 / 1;
+    }
+    .feature-img img { width: 100%; height: 100%; object-fit: cover; }
+    .feature-heading {
+      font-family: 'Halenoir', sans-serif;
+      font-size: 28px; font-weight: 500;
+      letter-spacing: -0.025em; color: var(--black);
+      line-height: 1.2; margin-bottom: 16px;
+    }
+    .feature-body {
+      font-family: 'IBMPlexMono', monospace;
+      font-size: 14px; line-height: 1.75; color: #333333; font-weight: 300;
+    }
+    .feature-body p + p { margin-top: 14px; }
+
+    /* ─── INLINE REVIEW CARDS (inside feature section 6) ─── */
+    .inline-reviews { margin-top: 24px; display: flex; flex-direction: column; gap: 12px; }
+    .inline-review {
+      border: 1px solid var(--border);
+      border-radius: 6px; padding: 16px 18px;
+      background: var(--surface);
+    }
+    .inline-review-text {
+      font-family: 'Halenoir', sans-serif;
+      font-size: 14px; line-height: 1.65; color: var(--text); font-weight: 300;
+      margin-bottom: 12px;
+    }
+    .inline-review-meta {
+      display: flex; align-items: center; gap: 8px;
+    }
+    .inline-review-meta .stars-row { display: flex; gap: 2px; }
+    .inline-review-meta .stars-row svg { width: 13px; height: 13px; fill: var(--star); }
+    .inline-review-name {
+      font-family: 'IBMPlexMono', monospace;
+      font-size: 12px; font-weight: 400; color: var(--black);
+    }
+
+    /* ─── INLINE SPECIALIST CARDS ─────────────────────────── */
+    .inline-specialists { margin-top: 24px; display: flex; flex-direction: column; gap: 12px; }
+    .inline-specialist {
+      border: 1px solid var(--border);
+      border-radius: 6px; padding: 16px 18px;
+      background: var(--surface);
+      display: flex; align-items: center; gap: 16px;
+    }
+    .specialist-photo {
+      width: 60px; height: 60px; border-radius: 50%;
+      overflow: hidden; flex-shrink: 0;
+    }
+    .specialist-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .specialist-name {
+      font-family: 'Halenoir', sans-serif;
+      font-size: 14px; font-weight: 500; color: var(--black); margin-bottom: 2px;
+    }
+    .specialist-title {
+      font-family: 'IBMPlexMono', monospace;
+      font-size: 12px; color: var(--text-muted); line-height: 1.4; font-weight: 300;
+    }
+
+    /* ─── OFERTA EXCLUSIVA ───────────────────────────────── */
+    .oferta-wrap {
+      position: relative;
+      padding: 0 24px 72px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .oferta-badge-float {
+      position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      background: var(--oferta-btn);
+      border: none;
+      border-radius: 100px;
+      padding: 6px 18px;
+      font-family: 'IBMPlexMono', monospace;
+      font-size: 11px; font-weight: 400; letter-spacing: 0.04em;
+      color: var(--white); white-space: nowrap;
+      z-index: 10;
+    }
+    .oferta-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden;
+      margin-top: 24px;
+    }
+    .oferta-image {
+      position: relative; overflow: hidden;
+      background: #f0f0ee;
+    }
+    .oferta-image img { width: 100%; height: 100%; object-fit: cover; }
+    .oferta-splash {
+      position: absolute; top: -20px; right: -20px;
+      width: 160px; height: 160px;
+      background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+      opacity: 0.7;
+      pointer-events: none;
+    }
+    .oferta-content {
+      background: var(--surface);
+      padding: 48px 40px;
+      display: flex; flex-direction: column;
+      justify-content: center; gap: 20px;
+    }
+    .oferta-label-row {
+      display: flex; align-items: center; gap: 0;
+      font-family: 'IBMPlexMono', monospace;
+      font-size: 11px; font-weight: 400; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--text-muted);
+    }
+    .oferta-label-row::before,
+    .oferta-label-row::after {
+      content: ''; flex: 1; height: 1px; background: var(--border);
+    }
+    .oferta-label-row::before { margin-right: 12px; }
+    .oferta-label-row::after { margin-left: 12px; }
+    .oferta-heading {
+      font-family: 'Halenoir', sans-serif;
+      font-size: clamp(26px, 2.8vw, 38px);
+      font-weight: 500; letter-spacing: -0.03em;
+      color: var(--black); line-height: 1.1;
+      text-transform: uppercase;
+    }
+    .oferta-sub {
+      font-family: 'Halenoir', sans-serif;
+      font-size: 14px; line-height: 1.65; color: var(--text-muted); font-weight: 300;
+    }
+    .btn-oferta {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      background: var(--oferta-btn); color: var(--white);
+      font-family: 'IBMPlexMono', monospace;
+      font-size: 12px; font-weight: 400; letter-spacing: 0.05em;
+      text-transform: uppercase; text-decoration: none;
+      padding: 17px 24px; border-radius: 100px; border: none;
+      cursor: pointer; width: 100%;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .btn-oferta:hover { background: var(--oferta-btn-hover); }
+    .btn-oferta:active { transform: scale(0.98); }
+    .btn-oferta:focus-visible { outline: 2px solid var(--oferta-btn); outline-offset: 3px; }
+    .oferta-timer {
+      text-align: center;
+      font-family: 'IBMPlexMono', monospace;
+      font-size: 12px; font-weight: 400; color: var(--black);
+      letter-spacing: 0.02em;
+    }
+    .oferta-tags {
+      display: flex; align-items: center; justify-content: center;
+      gap: 0; font-size: 12px;
+    }
+    .tag-risk {
+      font-family: 'IBMPlexMono', monospace;
+      padding: 5px 12px;
+      background: #fef2f2; border: 1px solid #fecaca;
+      border-radius: 100px 0 0 100px;
+      font-size: 11px; color: #555;
+    }
+    .tag-risk span { color: #dc2626; font-weight: 400; }
+    .tag-free {
+      font-family: 'IBMPlexMono', monospace;
+      padding: 5px 12px;
+      background: #f0fdf4; border: 1px solid #bbf7d0;
+      border-radius: 0 100px 100px 0;
+      border-left: none;
+      font-size: 11px; color: #555;
+    }
+    .tag-free span { color: #16a34a; font-weight: 400; }
+    .oferta-guarantee {
+      display: flex; align-items: flex-start; gap: 14px;
+      font-family: 'Halenoir', sans-serif;
+      font-size: 13px; color: var(--text-muted); line-height: 1.5; font-weight: 300;
+    }
+    .oferta-guarantee svg {
+      width: 36px; height: 36px; flex-shrink: 0; color: var(--black);
+    }
+    .oferta-guarantee strong { color: var(--black); font-weight: 500; }
+
+    /* ─── FOOTER ─────────────────────────────────────────── */
+    .footer {
+      background: var(--black); padding: 20px 24px; text-align: center;
+    }
+    .footer p {
+      font-family: 'IBMPlexMono', monospace;
+      font-size: 11px; color: #555; line-height: 1.6;
+    }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; height: auto; }
+      .hero-right { order: -1; height: 360px; }
+      .hero-left { padding: 40px 24px; }
+      .reviews-row { grid-template-columns: 1fr; }
+      .feature-row { grid-template-columns: 1fr; gap: 24px; padding: 40px 0; }
+      .oferta-grid { grid-template-columns: 1fr; }
+      .oferta-image { height: 280px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="#" class="logo"><img src="brand_assets/Logo BetterBE.svg" alt="BetterBE" /></a>
+  <a href="https://betterbehealth.com.br/products/suporte-de-jejum" class="btn-header">Comprar Agora</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-rating">
+      <div class="hero-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <span class="hero-rating-text"><span>4.9</span> &nbsp;|&nbsp; MAIS DE 10.000 CLIENTES SATISFEITOS</span>
+    </div>
+    <h1 class="hero-title">8 Razões que Fazem do Fasting Support o Suplemento Favorito de Quem Pratica Jejum Intermitente</h1>
+    <p class="hero-body">Muitas pessoas desistem do jejum por fome, falta de energia e dificuldade de manter a rotina. Não é falta de disciplina — é desconforto real no dia a dia.</p>
+    <a href="#oferta" class="btn-cta">Leia mais</a>
+  </div>
+  <div class="hero-right">
+    <img src="Foto da Capa.jpg" alt="Fasting Support BetterBE" />
+  </div>
+</section>
+
+<!-- SMALL REVIEWS ROW -->
+<div class="reviews-row">
+  <div class="review-card-sm">
+    <div class="rc-stars">
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    </div>
+    <p class="rc-title">Energia e disposição!</p>
+    <p class="rc-body">"Antes eu sentia muita fraqueza durante o jejum. Depois que conheci o Suporte para Jejum, tenho muita energia e disposição para os treinos."</p>
+    <hr class="rc-div" />
+    <p class="rc-author">Antonio P.</p>
+  </div>
+  <div class="review-card-sm">
+    <div class="rc-stars">
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    </div>
+    <p class="rc-title">Fez toda diferença!</p>
+    <p class="rc-body">"Eu tinha muita vontade de começar a fazer jejum, porém sempre sentia muita fome e fraqueza. Agora consigo fazer tranquilamente 16h, 24h… Realmente fez toda diferença."</p>
+    <hr class="rc-div" />
+    <p class="rc-author">André M.</p>
+  </div>
+  <div class="review-card-sm">
+    <div class="rc-stars">
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    </div>
+    <p class="rc-title">Controle total!</p>
+    <p class="rc-body">"O maior impacto pra mim foi o controle da vontade de comer — principalmente doce. Com o suporte, eu não fico nem com fome nem com vontade de comer por hábito."</p>
+    <hr class="rc-div" />
+    <p class="rc-author">Juliana S.</p>
+  </div>
+</div>
+
+<!-- FEATURE ROWS -->
+<div class="features">
+
+  <!-- 1 -->
+  <div class="feature-row">
+    <div class="feature-img">
+      <img src="Foto seção 1.jpg" alt="" />
+    </div>
+    <div class="feature-text">
+      <h2 class="feature-heading">1. É o primeiro suporte ao jejum desenvolvido no Brasil</h2>
+      <div class="feature-body">
+        <p>Desenvolvido pensando no praticante brasileiro, com fórmula limpa e ingredientes selecionados com base em ciência.</p>
+        <p>Cada componente tem um papel claro: apoiar o jejum sem comprometer o estado metabólico ou a rotina.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="feature-row">
+    <div class="feature-img">
+      <img src="Foto seção 2.jpg" alt="" />
+    </div>
+    <div class="feature-text">
+      <h2 class="feature-heading">2. Não quebra o jejum</h2>
+      <div class="feature-body">
+        <p>Formulado para ser metabolicamente neutro, sem açúcar e sem impacto relevante na insulina.</p>
+        <p>Isso permite manter o estado de jejum enquanto apoia energia e saciedade ao longo das horas.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="feature-row">
+    <div class="feature-img">
+      <img src="Foto seção 3.jpg" alt="" />
+    </div>
+    <div class="feature-text">
+      <h2 class="feature-heading">3. Matcha Push® — energia real. Sem crash. Sem ansiedade.</h2>
+      <div class="feature-body">
+        <p>Combina cafeína, L-teanina e EGCG para uma energia mais estável e controlada.</p>
+        <p>O resultado é foco contínuo, sem picos bruscos ou aquela queda de energia depois.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="feature-row">
+    <div class="feature-img">
+      <img src="Foto seção 4.jpg" alt="" style="object-position: bottom;" />
+    </div>
+    <div class="feature-text">
+      <h2 class="feature-heading">4. TCM C8 e C10 — combustível imediato para o cérebro e os músculos</h2>
+      <div class="feature-body">
+        <p>São gorduras que o corpo converte rapidamente em energia, especialmente útil durante o jejum.</p>
+        <p>Podem ajudar a manter disposição e reduzir sinais de fome ao longo do dia.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="feature-row">
+    <div class="feature-img">
+      <img src="Foto seção 5.jpg" alt="" />
+    </div>
+    <div class="feature-text">
+      <h2 class="feature-heading">5. L-Carnitina L-Tartarato: apoia a preservação de massa magra durante o jejum</h2>
+      <div class="feature-body">
+        <p>Auxilia o uso de gordura como fonte de energia, reduzindo a necessidade de recorrer ao músculo.</p>
+        <p>Isso ajuda a sustentar o jejum com mais segurança, principalmente para quem treina.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6 — Saciedade (with inline reviews) -->
+  <div class="feature-row">
+    <div class="feature-img" style="position:relative;">
+      <img src="Seção 6.png" alt="" />
+      <div style="position:absolute;inset:0;background:rgba(0,0,0,0.45);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px;text-align:center;">
+        <div style="display:flex;gap:4px;">
+          <svg style="width:20px;height:20px;fill:#d4a017;" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:20px;height:20px;fill:#d4a017;" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:20px;height:20px;fill:#d4a017;" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:20px;height:20px;fill:#d4a017;" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:20px;height:20px;fill:#d4a017;" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p style="font-size:20px;font-weight:500;color:#fff;line-height:1.15;letter-spacing:-0.02em;text-transform:uppercase;font-family:'Halenoir',sans-serif;">MAIS DE 10.000<br/>CLIENTES<br/>SATISFEITOS</p>
+      </div>
+    </div>
+    <div class="feature-text">
+      <h2 class="feature-heading">6. Saciedade que funciona — de verdade</h2>
+      <div class="feature-body">
+        <p>A combinação de fibras e gorduras ajuda a prolongar a sensação de saciedade.</p>
+        <p>Na prática, menos vontade de comer e mais facilidade para manter o jejum.</p>
+      </div>
+      <div class="inline-reviews">
+        <div class="inline-review">
+          <p class="inline-review-text">A saciedade é absurda. Eu tomo e simplesmente não sinto necessidade de comer. Consigo pular refeições com tranquilidade e manter minha energia ao longo do dia.</p>
+          <div class="inline-review-meta">
+            <div class="stars-row">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <span class="inline-review-name">Camila R.</span>
+          </div>
+        </div>
+        <div class="inline-review">
+          <p class="inline-review-text">Uso para treinar em jejum e consigo performar muito bem, mesmo sem comer. Meu corpo se adaptou a usar gordura como fonte de energia — isso mudou totalmente minha rotina.</p>
+          <div class="inline-review-meta">
+            <div class="stars-row">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <span class="inline-review-name">Felipe G.</span>
+          </div>
+        </div>
+        <div class="inline-review">
+          <p class="inline-review-text">Já indiquei para vários amigos — e todos se surpreenderam com a saciedade. Teve gente que nem sentiu vontade de almoçar depois de usar.</p>
+          <div class="inline-review-meta">
+            <div class="stars-row">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <span class="inline-review-name">Mariana L.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7 — Funciona para qualquer perfil -->
+  <div class="feature-row">
+    <div class="feature-img">
+      <img src="Seção 7.jpg" alt="" />
+    </div>
+    <div class="feature-text">
+      <h2 class="feature-heading">7. Funciona para qualquer perfil de jejum — do iniciante ao experiente</h2>
+      <div class="feature-body">
+        <p>Pode ser usado tanto por quem está começando quanto por quem já pratica o jejum avançado. A fórmula se adapta ao seu ritmo, sem exigir protocolos rígidos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8 — Desenvolvido por Especialistas -->
+  <div class="feature-row">
+    <div class="feature-img">
+      <img src="Seção 8.png" alt="" />
+    </div>
+    <div class="feature-text">
+      <h2 class="feature-heading">8. Desenvolvido por especialistas</h2>
+      <div class="feature-body">
+        <p>O Fasting Support foi formulado com base em ciência e validado por profissionais referência em endocrinologia, nutrologia e longevidade.</p>
+      </div>
+      <div class="inline-specialists">
+        <div class="inline-specialist">
+          <div class="specialist-photo">
+            <img src="Dra. Vania Foto.webp" alt="Dra. Vânia Assaly" />
+          </div>
+          <div>
+            <p class="specialist-name">Dra. Vânia Assaly</p>
+            <p class="specialist-title">Médica endocrinologista e nutróloga</p>
+          </div>
+        </div>
+        <div class="inline-specialist">
+          <div class="specialist-photo">
+            <img src="Dr. Filippo Foto.webp" alt="Dr. Filippo Pedrinola" />
+          </div>
+          <div>
+            <p class="specialist-name">Dr. Filippo Pedrinola</p>
+            <p class="specialist-title">Médico endocrinologista e PhD</p>
+          </div>
+        </div>
+        <div class="inline-specialist">
+          <div class="specialist-photo">
+            <img src="Fernanda Calvo Foto.webp" alt="Fernanda Calvo Fortes" />
+          </div>
+          <div>
+            <p class="specialist-name">MSc. Fernanda Calvo</p>
+            <p class="specialist-title">Mestre em biomarcadores do envelhecimento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /features -->
+
+<!-- OFERTA EXCLUSIVA -->
+<div class="oferta-wrap" id="oferta" style="padding-top: 48px;">
+  <div class="oferta-badge-float">OFERTA EXCLUSIVA</div>
+  <div class="oferta-grid">
+    <div class="oferta-image">
+      <div class="oferta-splash"></div>
+      <img src="SAbor limão Fasting.webp" alt="Fasting Support Sabor Limão" />
+    </div>
+    <div class="oferta-content">
+      <div class="oferta-label-row">OFERTA EXCLUSIVA</div>
+      <h2 class="oferta-heading">GANHE ATÉ 25% OFF + FRETE GRÁTIS</h2>
+      <p class="oferta-sub">O Fasting Support está com oferta especial por tempo limitado. Aproveite antes do estoque acabar.</p>
+      <a href="https://betterbehealth.com.br/products/suporte-de-jejum" class="btn-oferta">GARANTIR MEU DESCONTO &nbsp;→</a>
+      <p class="oferta-timer">OFERTA RESERVADA POR: <span id="countdown">06:43:24</span></p>
+      <div class="oferta-tags">
+        <span class="tag-risk">Risco de Estoque: <span>Alto</span></span>
+        <span class="tag-free"><span>FRETE</span> Grátis</span>
+      </div>
+      <div class="oferta-guarantee">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.955 11.955 0 003 11.943c0 6.344 4.478 11.596 10.438 12.832a.75.75 0 00.124 0C19.522 23.54 24 18.287 24 11.943c0-2.078-.534-4.032-1.472-5.728L19.5 9.75" />
+        </svg>
+        <p><strong>Experimente por 30 dias.</strong> Se você não estiver satisfeito, reembolsaremos 100% do valor. Sem burocracia.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 BetterBE Health. Todos os direitos reservados. Este conteúdo tem caráter informativo e publicitário.</p>
+</footer>
+
+<script>
+  // Countdown timer
+  let total = 6 * 3600 + 43 * 60 + 24;
+  const el = document.getElementById('countdown');
+  function fmt(s) {
+    const h = String(Math.floor(s/3600)).padStart(2,'0');
+    const m = String(Math.floor((s%3600)/60)).padStart(2,'0');
+    const sec = String(s%60).padStart(2,'0');
+    return `${h}:${m}:${sec}`;
+  }
+  setInterval(() => { if (total > 0) { total--; el.textContent = fmt(total); } }, 1000);
+</script>
+
+</body>
+</html>
