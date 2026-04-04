@@ -166,6 +166,23 @@
       padding: 40px 24px;
       gap: 20px;
     }
+    @media (max-width: 768px) {
+      .reviews-row {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 24px 16px;
+        gap: 12px;
+        scrollbar-width: none;
+      }
+      .reviews-row::-webkit-scrollbar { display: none; }
+      .review-card-sm {
+        min-width: 280px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+      }
+    }
     .review-card-sm {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -388,7 +405,6 @@
       .hero { grid-template-columns: 1fr; height: auto; }
       .hero-right { order: -1; height: 360px; }
       .hero-left { padding: 40px 24px; }
-      .reviews-row { grid-template-columns: 1fr; }
       .feature-row { grid-template-columns: 1fr; gap: 24px; padding: 40px 0; }
       .oferta-grid { grid-template-columns: 1fr; }
       .oferta-image { height: 280px; }
