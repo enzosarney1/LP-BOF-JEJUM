@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/Por-que-mais-de-10000", "destination": "/index.html" }
+  ]
+}
