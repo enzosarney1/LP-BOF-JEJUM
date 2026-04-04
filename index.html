@@ -172,16 +172,23 @@
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        padding: 24px 16px;
-        gap: 12px;
+        padding: 16px;
+        gap: 10px;
         scrollbar-width: none;
       }
       .reviews-row::-webkit-scrollbar { display: none; }
       .review-card-sm {
-        min-width: 280px;
+        min-width: 220px;
+        max-width: 220px;
         flex-shrink: 0;
         scroll-snap-align: start;
+        padding: 14px;
+        gap: 6px;
       }
+      .rc-stars svg { width: 12px; height: 12px; }
+      .rc-title { font-size: 13px; }
+      .rc-body { font-size: 11px; line-height: 1.5; }
+      .rc-author { font-size: 9px; }
     }
     .review-card-sm {
       background: var(--surface);
